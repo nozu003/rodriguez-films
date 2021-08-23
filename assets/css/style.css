@@ -1,0 +1,27 @@
+header{
+    height: 100vh;
+}
+
+.top-port,
+.bot-port{
+    height: 18%;
+    background-color: black;
+}
+
+.mid-port{
+    height: 64%;
+}
+
+.wrapper{
+    height: 100%;
+}
+
+.hero{
+    height: 120%;
+    width: 100%;
+    position: absolute;
+    top: -23%;
+    z-index: -1;
+    background-image: url("../images/1.jpg");
+    background-size: cover;
+}
