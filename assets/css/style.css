@@ -252,6 +252,8 @@ body{
 
 .top-port,
 .bot-port{
+    position: relative;
+    z-index: 2;
     height: 18%;
     background-color: #151515;
 }
@@ -269,7 +271,7 @@ body{
     width: 100%;
     position: absolute;
     top: -23%;
-    z-index: -1;
+    z-index: 1;
     background-image: url("../images/1.jpg");
     background-size: cover;
 }
@@ -282,7 +284,7 @@ body{
 
 .name-wrapper{
     position: absolute;
-    top: 5%;
+    top: 45%;
     left: 3%;
 }
 
@@ -299,7 +301,7 @@ body{
 }
 /* NAVBAR */
 .nav-bar-wrapper{
-    margin-top: 7%;
+    margin-top: 10%;
     margin-left: 55%;
 }
 .nav-bar-list li{
@@ -317,10 +319,10 @@ body{
 
 .person{
     position: absolute;
-    top: 62px;
+    top: 85px;
     right: 40px;
     margin-left: 2%;
-    font-size: 800%;
+    font-size: 1000%;
     color: white;
 }
 /* MOTTO */
@@ -332,7 +334,8 @@ body{
     font-size: 800%;
     font-weight: 500;
     position: absolute;
-    top: 88%;
+    z-index: 3;
+    top: 50%;
     left: 3%;
 }
 .social-nav{
@@ -353,4 +356,74 @@ body{
 
 .social-wrapper ul li a{
     color: white;
+}
+/* SECTION */
+.hero-section{
+    display: flex;
+    height: 120%;
+    width: 100%;
+    position: absolute;
+    top: 67%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.250)),url("../images/IMG_7272-2.jpg");
+    background-size: cover;
+}
+
+.hero-section-left,
+.hero-section-right{
+    position: relative;
+    flex: 50%;
+}
+
+.hero-section-right h2{
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    font-size: 2000%;
+    font-weight: bold;
+    color: white;
+}
+
+.hero-section-right h2 span{
+    color: #FF4B56;
+}
+
+.hero-section-left h2{
+    position: absolute;
+    z-index: 4;
+    top: 97%;
+    left: 12%;
+    font-size: 1500%;
+    font-weight: bold;
+    color: white;
+}
+
+.link-wrapper a{
+    position: absolute;
+    z-index: 4;
+    top: 101%;
+    left: 12%;
+    font-size: 1000%;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FF4B56;
+}
+.est-wrapper h5{
+    position: absolute;
+    top: 80%;
+    left: 1%;
+    color: white;
+}
+
+/* PHONE */
+.phone-wrapper{
+    position: relative;
+}
+.phone-wrapper img{
+    width: 30%;
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    
 }
