@@ -248,6 +248,7 @@ section{
 body{
     font-family: 'Helvetica Now Display';
     font-size: 20%;
+    background-color: #151515;
 }
 
 .top-port,
@@ -272,7 +273,7 @@ body{
     position: absolute;
     top: -23%;
     z-index: 1;
-    background-image: url("../images/1.jpg");
+    background-image: url("../images/home/1.jpg");
     background-size: cover;
 }
 
@@ -344,6 +345,11 @@ body{
 
 .social{
     font-size: 1000%;
+    transition: .5s;
+}
+
+.social:hover{
+    font-size: 1250%;
 }
 .social-wrapper ul{
     margin-top: 4%;
@@ -364,7 +370,7 @@ body{
     width: 100%;
     position: absolute;
     top: 67%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.250)),url("../images/IMG_7272-2.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.250)),url("../images/home/IMG_7272-2.jpg");
     background-size: cover;
 }
 
@@ -427,3 +433,203 @@ body{
     transform: translate(-50%, -100%);
     
 }
+
+/* SLIDER */
+.slider{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.slider-wrapper{
+    position: absolute;
+    top: 109%;
+    left: 39%;
+    width: 22%;
+    height: 91%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides{
+    position: relative;
+    z-index: 2;
+    height: 131%;
+    width: 500%;
+    display: flex;
+}
+
+.slide img{
+    height: 70%;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 1.5s;
+}
+
+/* MANUAL NAVIGATION */
+.navigation-manual{
+    position: absolute;
+    z-index: 5;
+    top: 90%;
+    left: -48%;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 1%;
+}
+.manual-btn:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+#radio-1:checked ~ .first{
+    margin-left: 0%;
+}
+#radio-2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio-3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio-4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio-5:checked ~ .first{
+    margin-left: -80%;
+}
+
+/* AUTO NAVIGATION */
+.navigation-auto{
+    position: absolute;
+    z-index: 5;
+    top: 68.7%;
+    left: -9.6%;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 1%;
+}
+
+#radio-1:checked ~ .navigation-auto .auto-btn1{
+    background: white; 
+}
+#radio-2:checked ~ .navigation-auto .auto-btn2{
+    background: white; 
+}
+#radio-3:checked ~ .navigation-auto .auto-btn3{
+    background: white; 
+}
+#radio-4:checked ~ .navigation-auto .auto-btn4{
+    background: white; 
+}
+#radio-5:checked ~ .navigation-auto .auto-btn5{
+    background: white; 
+}
+/* ANIMATIONS */
+.js--wp-1{
+    opacity: 0;
+}
+.js--wp-1.animated{
+    opacity: 1;
+}
+/* QUERIES */
+@media only screen and (max-width: 1920px) {
+    /* .slider-wrapper{
+        position: absolute;
+        top: 112%;
+        left: 39.3%;
+        width: 22%;
+        height: 88%;
+        border-radius: 10px;
+        overflow: hidden;
+    } */
+    /* MANUAL NAVIGATION */
+    /* .navigation-manual{
+        position: absolute;
+        z-index: 5;
+        top: 90%;
+        left: -47%;
+        width: 800px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    } */
+    /* AUTO NAVIGATION */
+    /* .navigation-auto{
+        position: absolute;
+        z-index: 5;
+        top: 68.7%;
+        left: -9.4%;
+        width: 800px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    } */
+}
+
+@media only screen and (max-width: 1366px) {
+    .slider-wrapper{
+        position: absolute;
+        top: 112%;
+        left: 39.5%;
+        width: 22%;
+        height: 88%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    /* MANUAL NAVIGATION */
+    .navigation-manual{
+        position: absolute;
+        z-index: 5;
+        top: 90%;
+        left: -85%;
+        width: 800px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+    /* AUTO NAVIGATION */
+    .navigation-auto{
+        position: absolute;
+        z-index: 5;
+        top: 68.7%;
+        left: -17%;
+        width: 800px;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
