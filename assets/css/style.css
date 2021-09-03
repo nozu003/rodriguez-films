@@ -323,6 +323,30 @@ body{
 .js--wp-1.animated{
     opacity: 1;
 }
+
+/* SCROLLBAR */
+/* width */
+        ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px transparent; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FF4B56; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FF4B56; 
+  }
+
 /* QUERIES */
 @media only screen and (max-width: 1920px) {
     /* .slider-wrapper{

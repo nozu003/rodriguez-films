@@ -1,0 +1,183 @@
+/* STYLESHEET */
+header,
+section{
+    height: 100vh;
+}
+
+body{
+    font-family: 'Helvetica Now Display';
+    font-size: 20%;
+    background-color: #151515;
+}
+
+.top-port,
+.bot-port{
+    position: relative;
+    z-index: 2;
+    height: 18%;
+
+}
+
+/* MID PORT */
+.mid-port{
+    height: 64%;
+}
+
+.wrapper{
+    height: 100%;
+    position: relative;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding: 1%;
+}
+
+.hero-container{
+    height: 100%;
+    margin: -.3% 10% 0 10%;
+}
+
+.hero-container a{
+    text-decoration: none;
+}
+
+.hero-holder{
+    position: relative;
+    margin-bottom: 1%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.text-holder{
+    color: white;
+    font-size: 3200%;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-upper,
+.hero-lower{
+    filter: grayscale(100%);
+    transform: scale(1.05);
+    height: 100%;
+    background-size: cover;
+    transition: 1s;
+}
+
+.hero-upper:hover,
+.hero-lower:hover{
+    filter: none;
+    transform: scale(1);
+}
+.hero-upper{
+    background-image: url("../images/portfolios/3.jpg");
+}
+
+.hero-lower{
+    background-image: url("../images/portfolios/IMG_5613.jpg");
+}
+
+/* NAME */
+.freelancer-name,
+.nav-bar{
+    flex: 50%;
+}
+
+.name-wrapper{
+    position: absolute;
+    top: 45%;
+    left: 3%;
+}
+
+.name-wrapper h2{
+    font-size: 1000%;
+    font-weight: bold;
+    color: white;
+}
+
+.f-name-line{
+    width: 175%;
+    padding-bottom: 1%;
+    border-bottom: 3px solid #FF4B56;
+}
+/* NAVBAR */
+.nav-bar-wrapper{
+    margin-top: 10%;
+    margin-left: 55%;
+}
+.nav-bar-list li{
+    display: inline-block;
+    margin-left: 5%;
+}
+
+.nav-bar-list li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 400%;
+    font-weight: bold;
+    color: #FF4B56;
+}
+
+.person{
+    position: absolute;
+    top: 85px;
+    right: 40px;
+    margin-left: 2%;
+    font-size: 1000%;
+    color: white;
+}
+/* MOTTO */
+.motto{
+    flex: 50%;
+}
+.motto h2{
+    color: #FF4B56;
+    font-size: 800%;
+    font-weight: 500;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 3%;
+}
+.social-nav{
+    flex: 50%;
+}
+
+.social{
+    font-size: 1000%;
+    transition: .5s;
+}
+
+.social:hover{
+    font-size: 1250%;
+}
+.social-wrapper ul{
+    margin-top: 4%;
+}
+.social-wrapper ul li{
+    display: block;
+    margin-top: 1%;
+    margin-left: 92%;
+}
+
+.social-wrapper ul li a{
+    color: white;
+}
+
+/* FOOTER */
+.est-wrapper h5{
+    position: absolute;
+    top: 80%;
+    left: 1%;
+    color: white;
+}
