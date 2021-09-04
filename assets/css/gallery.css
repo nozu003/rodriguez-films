@@ -1,0 +1,247 @@
+/* STYLESHEET */
+header,
+section{
+    height: 100vh;
+}
+
+body{
+    font-family: 'Helvetica Now Display';
+    font-size: 20%;
+    background-color: #151515;
+}
+
+.top-port,
+.bot-port{
+    position: relative;
+}
+
+.bot-port{
+    height: 18%;
+}
+
+/* MID PORT */
+.mid-port{
+    height: 64%;
+}
+
+.wrapper{
+    height: 100%;
+    position: relative;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding: 1%;
+}
+
+.hero h4{
+    float: right;
+    margin-right: 3%;
+    font-size: 1000%;
+    font-weight: bold;
+    text-align: end;
+}
+
+.hero h4 span{
+    color: #FF4B56;
+}
+
+.hero-container{
+    height: 100%;
+}
+/* NAME */
+.freelancer-name,
+.nav-bar{
+    flex: 50%;
+}
+
+.name-wrapper{
+    position: absolute;
+    top: 61%;
+    left: 3%;
+}
+
+.name-wrapper h2{
+    font-size: 1000%;
+    font-weight: bold;
+    color: white;
+}
+
+.f-name-line{
+    width: 175%;
+    padding-bottom: 1%;
+    border-bottom: 3px solid #FF4B56;
+}
+/* NAVBAR */
+.nav-bar-wrapper{
+    margin-top: 10%;
+    margin-left: 55%;
+}
+.nav-bar-list li{
+    display: inline-block;
+    margin-left: 5%;
+}
+
+.nav-bar-list li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 400%;
+    font-weight: bold;
+    color: #FF4B56;
+}
+
+.person{
+    position: absolute;
+    top: 85px;
+    right: 40px;
+    margin-left: 2%;
+    font-size: 1000%;
+    color: white;
+}
+/* MOTTO */
+.motto{
+    flex: 50%;
+}
+.motto h2{
+    color: #FF4B56;
+    font-size: 800%;
+    font-weight: 500;
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 3%;
+}
+.social-nav{
+    flex: 50%;
+}
+
+.social{
+    font-size: 1000%;
+    transition: .5s;
+}
+
+.social:hover{
+    font-size: 1250%;
+}
+.social-wrapper ul{
+    margin-top: 4%;
+}
+.social-wrapper ul li{
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin-top: 1%;
+    margin-left: 92%;
+}
+
+.social-wrapper ul li a{
+    color: white;
+}
+
+/* FOOTER */
+.est-wrapper h5{
+    position: absolute;
+    top: 107%;
+    left: 1%;
+    color: white;
+}
+
+.gallery-holder{
+    height: 115%;
+    margin-top: 5%;
+    margin-left: 1.5%;
+    border-left: 8px solid #FF4B56;
+}
+
+.gallery-holder h4{
+    font-size: 1000%;
+    margin-left: 1%;
+    float: left;
+    position: absolute;
+}
+.gallery-container{
+    height: 85%;
+}
+.gallery-upper,
+.gallery-lower{
+    width: 90%;
+    height: 50%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+}
+
+
+.categ-1,
+.categ-2,
+.categ-3,
+.categ-4,
+.categ-5,
+.categ-6{
+    margin: 3.5% .5% .5%;
+    height: 100%;
+    flex: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.categ-1 img,
+.categ-2 img,
+.categ-3 img,
+.categ-4 img,
+.categ-5 img,
+.categ-6 img{
+    opacity: .5;
+    max-width: 100%;
+    height: auto;
+    transition: .5s;
+}
+
+.categ-1:hover > img,
+.categ-2:hover > img,
+.categ-3:hover > img,
+.categ-4:hover > img,
+.categ-5:hover > img,
+.categ-6:hover > img{
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.categ-2 img,
+.categ-4 img,
+.categ-5 img{
+    margin-top: -40%;
+}
+
+.categ-3 img{
+    margin-top: -20%;
+}
+
+.categ-1 h4,
+.categ-2 h4,
+.categ-3 h4,
+.categ-4 h4,
+.categ-5 h4{
+    position: absolute;
+    top: 70%;
+    left: 3%;
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.categ-6 h4{
+    position: absolute;
+    top: 83%;
+    left: 3%;
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}

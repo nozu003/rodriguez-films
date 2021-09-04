@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    var counter = 1;
+    if(document.title == "Rodriguez Films | Home"){
+        var counter = 1;
     setInterval(function(){
         document.getElementById('radio-' + counter).checked = true;
         counter++;
@@ -13,5 +14,10 @@ $(document).ready(function(){
         
       }, {
           offset: '90%;'
+      });
+    }
+
+      $('.categ-1').click(function(){
+        location.href = "/landscape.html";
       });
 });
