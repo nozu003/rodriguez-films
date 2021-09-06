@@ -139,7 +139,7 @@ body{
 }
 .social-wrapper ul li{
     position: relative;
-    z-index: 2;
+    z-index: 1;
     display: block;
     margin-top: 1%;
     margin-left: 92%;
@@ -212,7 +212,6 @@ body{
 .categ-11:hover, .categ-12:hover, .categ-13:hover, .categ-14, .categ-15:hover{
     cursor: pointer;
 }
-
 /* SCROLLBAR */
 /* width */
 ::-webkit-scrollbar {
@@ -234,4 +233,34 @@ body{
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #FF4B56; 
+  }
+
+  .display-box{
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 1;
+  }
+
+  .display-wrapper{
+      height: 100%;
+      position: relative;
+  }
+
+  .display-wrapper img{
+      width: 65%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 1;
+      transform: translate(-50%, -50%);
+  }
+
+  .display-bg{
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.85);
+      position: absolute;
+      top: 0;
   }
