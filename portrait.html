@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/portrait.css">
+    <link rel="stylesheet" href="assets/css/loading.css">
+    <title>Rodriguez Films | Portrait</title>
+</head>
+<body>
+    <header>
+        <div class="loading-bar"></div>
+        <div class="top-port">
+            <div class="header d-flex">
+                <div class="freelancer-name">
+                    <div class="name-wrapper">
+                        <h2 class="f-name">Gallery</h2>
+                        <div class="f-name-line"></div>
+                    </div>
+                </div>
+                <div class="nav-bar">
+                    <div class="nav-bar-wrapper">
+                        <ul class="nav-bar-list">
+                            <li>
+                                <a href="#" id="home">home</a>
+                            </li>
+                            <li>
+                                <a href="#" id="portfolio">portfolios</a>
+                            </li>
+                            <li>
+                                <a href="#" id="about">about</a>
+                            </li>
+                            <li>
+                                <a href="#" id="contact">contact</a>
+                            </li>
+                            <ion-icon name="person" class="person"></ion-icon>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mid-port">
+            <div class="wrapper">
+                <div class="hero">
+                    <a href="#" id="gallery"><h4 class="text-light"><span><ion-icon name="arrow-back-outline" class="back"></ion-icon>GO BACK TO GALLERY</span></h4></a>
+                    <div class="hero-container">
+                        <div class="gallery-holder">
+                            <h4 class="text-light">Portraits</h4>
+                            <div class="gallery-container">
+                                <!-- Upper selection -->
+                                <div class="gallery-upper d-flex">
+                                    <div class="categ-1">
+                                        <img src="assets/images/gallery/portrait/1.jpg" alt="">
+                                    </div>
+                                    <div class="categ-2">
+                                        <img src="assets/images/gallery/portrait/2.jpg" alt="">
+                                    </div>
+                                    <div class="categ-3">
+                                        <img src="assets/images/gallery/portrait/3.jpg" alt="">
+                                    </div>
+                                    <div class="categ-4">
+                                        <img src="assets/images/gallery/portrait/4.jpg" alt="">
+                                    </div>
+                                    <div class="categ-5">
+                                        <img src="assets/images/gallery/portrait/5.jpg" alt="">
+                                    </div>
+                                    <div class="categ-6">
+                                        <img src="assets/images/gallery/portrait/6.jpg" alt="">
+                                    </div>
+                                </div>
+                                <!-- Upper selection end-->
+                                <!-- Lower selection -->
+                                <div class="gallery-upper d-flex">
+                                    <div class="categ-7">
+                                        <img src="assets/images/gallery/portrait/7.jpg" alt="">
+                                    </div>
+                                    <div class="categ-8">
+                                        <img src="assets/images/gallery/portrait/8.jpg" alt="">
+                                    </div>
+                                    <div class="categ-9">
+                                        <img src="assets/images/gallery/portrait/9.jpg" alt="">
+                                    </div>
+                                    <div class="categ-10">
+                                        <img src="assets/images/gallery/portrait/10.jpg" alt="">
+                                    </div>
+                                    <div class="categ-11">
+                                        <img src="assets/images/gallery/portrait/11.jpg" alt="">
+                                    </div>
+                                    <div class="categ-12">
+                                        <img src="assets/images/gallery/portrait/12.jpg" alt="">
+                                    </div>
+                                </div>
+                                <!-- Lower selection end-->
+                                <h6>Portraits of people i’ve met and of my friends. The face of a person in a photo<br>can tell a story in that scene.</h6>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bot-port d-flex">
+            <div class="motto">
+                <div class="est-wrapper">
+                    <h5>Copyright &copy; 2021 Carl Ivan Rodriguez. All Rights Reserved.</h5>
+                </div>
+            </div>
+            <div class="social-nav">
+                <div class="social-wrapper">
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/carl_rod77/" target="_blank"><ion-icon name="logo-instagram" class="social"></ion-icon></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/Carl9063/" target="_blank"><ion-icon name="logo-facebook" class="social"></ion-icon></a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCmrOu7rQOqQvizQe4ePYlJw" target="_blank"><ion-icon name="logo-youtube" class="social"></ion-icon></a>
+                        </li>
+                    </ul>   
+                </div>
+            </div>
+        </div>
+        <div class="display-box d-none">
+            <div class="picture-navigation d-flex">
+                <div class="btn-left">
+                    <div class="btn-wrapper-left">
+                        <ion-icon name="chevron-back" class="picture-nav-btn" id="left"></ion-icon>
+                    </div>
+                </div>
+                <div class="btn-right">
+                    <div class="btn-wrapper-right">
+                        <ion-icon name="chevron-forward" class="picture-nav-btn" id="right"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="display-wrapper">
+                <img src="" alt="" id="image-display">
+            </div>
+            <div class="display-bg"></div>
+        </div>
+    </header>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

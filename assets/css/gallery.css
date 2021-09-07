@@ -13,6 +13,7 @@ body{
 .top-port,
 .bot-port{
     position: relative;
+    z-index: 2;
 }
 
 .bot-port{

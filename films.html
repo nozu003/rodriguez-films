@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/films.css">
+    <link rel="stylesheet" href="assets/css/loading.css">
     <title>Rodriguez Films | Films</title>
 </head>
 <body>
     <header>
         <div class="top-port">
+            <div class="loading-bar"></div>
             <div class="header d-flex">
                 <div class="freelancer-name">
                     <div class="name-wrapper">
@@ -25,16 +27,16 @@
                     <div class="nav-bar-wrapper">
                         <ul class="nav-bar-list">
                             <li>
-                                <a href="/index.html">home</a>
+                                <a href="#" id="home">home</a>
                             </li>
                             <li>
-                                <a href="/portfolios.html">portfolios</a>
+                                <a href="#" id="portfolio">portfolios</a>
                             </li>
                             <li>
-                                <a href="/about.html">about</a>
+                                <a href="#" id="about">about</a>
                             </li>
                             <li>
-                                <a href="">contact</a>
+                                <a href="#" id="contact">contact</a>
                             </li>
                             <ion-icon name="person" class="person"></ion-icon>
                         </ul>
@@ -58,9 +60,9 @@
                        <div class="film-wrapper d-flex p-4">
                             <div class="film-left">
                                 <figure>
-                                    <img src="assets/images/portfolios/films/1.jpg" alt="">
+                                    <img src="assets/images/portfolios/films/1.jpg" alt="" class="film-1">
                                 </figure>
-                                <ion-icon name="play" class="play"></ion-icon>
+                                <ion-icon name="play" class="play play-1"></ion-icon>
                             </div>
                             <div class="film-right">
                                 <h3>Intra–Santiago</h3>
@@ -77,9 +79,9 @@
                         </div>
                         <div class="film-right">
                             <figure>
-                                <img src="assets/images/portfolios/films/2.jpg" alt="">
+                                <img src="assets/images/portfolios/films/2.jpg" alt="" class="film-2">
                             </figure>
-                            <ion-icon name="play" class="play"></ion-icon>
+                            <ion-icon name="play" class="play play-2"></ion-icon>
                         </div>
                         </div>
                         <!-- Film 2 end -->
@@ -87,9 +89,9 @@
                         <div class="film-wrapper d-flex p-4">
                             <div class="film-left">
                                 <figure>
-                                    <img src="assets/images/portfolios/films/vlcsnap-2021-03-26-18h30m05s128.jpg" alt="">
+                                    <img src="assets/images/portfolios/films/vlcsnap-2021-03-26-18h30m05s128.jpg" alt="" class="film-3">
                                 </figure>
-                                <ion-icon name="play" class="play"></ion-icon>
+                                <ion-icon name="play" class="play play-3"></ion-icon>
                             </div>
                             <div class="film-right">
                                 <h3>Larawan</h3>
@@ -105,9 +107,9 @@
                                 </div>
                                 <div class="film-right">
                                     <figure>
-                                        <img src="assets/images/portfolios/films/4.jpg" alt="">
+                                        <img src="assets/images/portfolios/films/4.jpg" alt="" class="film-4">
                                     </figure>
-                                    <ion-icon name="play" class="play"></ion-icon>
+                                    <ion-icon name="play" class="play play-4"></ion-icon>
                                 </div>
                                 </div>
                                 <!-- Film 4 end -->
@@ -115,9 +117,9 @@
                                 <div class="film-wrapper d-flex p-4">
                                     <div class="film-left">
                                         <figure>
-                                            <img src="assets/images/portfolios/films/vlcsnap-2021-03-28-11h44m10s271.png" alt="">
+                                            <img src="assets/images/portfolios/films/vlcsnap-2021-03-28-11h44m10s271.png" alt="" class="film-5">
                                         </figure>
-                                        <ion-icon name="play" class="play"></ion-icon>
+                                        <ion-icon name="play" class="play play-5"></ion-icon>
                                     </div>
                                     <div class="film-right">
                                         <h3>Field Trip 2018</h3>
@@ -133,9 +135,9 @@
                                     </div>
                                     <div class="film-right">
                                         <figure>
-                                            <img src="assets/images/portfolios/films/IMG_4908.jpg" alt="">
+                                            <img src="assets/images/portfolios/films/IMG_4908.jpg" alt="" class="film-6">
                                         </figure>
-                                        <ion-icon name="play" class="play"></ion-icon>
+                                        <ion-icon name="play" class="play play-6"></ion-icon>
                                     </div>
                                 </div>
                                 <!-- Film 6 end -->
@@ -167,7 +169,13 @@
         <div class="bot-port d-flex">
             <div class="motto">
                 <div class="est-wrapper">
-                    <h5>Carl Ivan Rodriguez. est. 2021. all rights reserved.</h5>
+                    <h5>Copyright &copy; 2021 Carl Ivan Rodriguez. All Rights Reserved.</h5>
+                </div>
+                <div class="display-box d-none">
+                    <div class="display-wrapper">   
+                        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="788.54" height="443" type="text/html" src="" id="video-player"></iframe>
+                    </div>
+                    <div class="display-bg"></div>
                 </div>
             </div>
         </div>

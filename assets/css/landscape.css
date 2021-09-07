@@ -209,7 +209,7 @@ body{
 }
 .categ-1:hover, .categ-2:hover, .categ-3:hover, .categ-4, .categ-5:hover,
 .categ-6:hover, .categ-7:hover, .categ-8:hover, .categ-9, .categ-10:hover,
-.categ-11:hover, .categ-12:hover, .categ-13:hover, .categ-14, .categ-15:hover{
+.categ-11:hover, .categ-12:hover, .categ-13:hover, .categ-14{
     cursor: pointer;
 }
 /* SCROLLBAR */
@@ -263,4 +263,44 @@ body{
       background-color: rgba(0, 0, 0, 0.85);
       position: absolute;
       top: 0;
+  }
+
+  .picture-navigation{
+      position: absolute;
+      width: 100%;
+  }
+  .btn-left,
+  .btn-right{
+      height: 100vh;
+      width: 100%;
+      position: relative;
+  }
+
+  .btn-wrapper-left,
+  .btn-wrapper-right{
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  .btn-wrapper-left{
+      left: 20%;
+  }
+
+  .btn-wrapper-right{
+    right: 20%;
+}
+  .picture-nav-btn{
+      opacity: .5;
+      color: white;
+      font-size: 2000%;
+      transition: .5s;
+  }
+
+  .picture-nav-btn:hover{
+      font-size: 2250%;
+      opacity: .75;
+      cursor: pointer;
+      margin-right:20%;
   }
